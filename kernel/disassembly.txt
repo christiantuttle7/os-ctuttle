@@ -1,0 +1,28 @@
+$ make disasm
+objdump -d --disassemble=raw_getuid getuid
+
+getuid:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001229 <raw_getuid>:
+    1229:	f3 0f 1e fa          	endbr64
+    122d:	55                   	push   %rbp
+    122e:	48 89 e5             	mov    %rsp,%rbp
+    1231:	b8 66 00 00 00       	mov    $0x66,%eax
+    1236:	0f 05                	syscall
+    1238:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    123c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1240:	5d                   	pop    %rbp
+    1241:	c3                   	ret
+
+Disassembly of section .fini:
