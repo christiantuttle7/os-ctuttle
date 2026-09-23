@@ -1,0 +1,28 @@
+gcc -std=c11 -Wall -Wextra -pedantic -pthread tickets.c -o tickets
+Concert Ticket Simulator (C / pthreads)
+20 tickets, 4 buyer threads
+
+Buyer 1 bought seat 1 | Tickets left: 19
+Buyer 2 bought seat 2 | Tickets left: 18
+Buyer 3 bought seat 3 | Tickets left: 17
+Buyer 4 bought seat 4 | Tickets left: 16
+Buyer 1 bought seat 5 | Tickets left: 15
+Buyer 2 bought seat 6 | Tickets left: 14
+Buyer 3 bought seat 7 | Tickets left: 13
+Buyer 4 bought seat 8 | Tickets left: 12
+Buyer 1 bought seat 9 | Tickets left: 11
+Buyer 2 bought seat 10 | Tickets left: 10
+Buyer 3 bought seat 11 | Tickets left: 9
+Buyer 4 bought seat 12 | Tickets left: 8
+Buyer 1 bought seat 13 | Tickets left: 7
+Buyer 2 bought seat 14 | Tickets left: 6
+Buyer 3 bought seat 15 | Tickets left: 5
+Buyer 4 bought seat 16 | Tickets left: 4
+Buyer 1 bought seat 17 | Tickets left: 3
+Buyer 2 bought seat 18 | Tickets left: 2
+Buyer 3 bought seat 19 | Tickets left: 1
+Buyer 4 bought seat 20 | Tickets left: 0
+
+Tickets sold: 20
+Tickets remaining: 0
+Verification: PASS
